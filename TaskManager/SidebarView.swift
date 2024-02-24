@@ -26,6 +26,13 @@ struct SidebarView: View {
                         Image(systemName: "folder")
                         TextField("New Group", text: $group.title)
                     }.tag(TaskSection.list(group))
+                        .contextMenu(ContextMenu(menuItems: {
+                            Button("Delete", role: .destructive) {
+                                if let index = userCreatedGroups.firstIndex(where: { $0.id == group.id }) {
+                                    userCreatedGroups.remove(at: index)
+                                }
+                            }
+                        }))
                 }
             }
         }.safeAreaInset(edge: .bottom) {
@@ -39,6 +46,7 @@ struct SidebarView: View {
             .foregroundColor(.accentColor)
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+            .keyboardShortcut(KeyEquivalent("a"), modifiers: .command)
         }
     }
 }

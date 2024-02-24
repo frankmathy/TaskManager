@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		850A2DFC2B8A0AC500B55076 /* TaskManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2DFB2B8A0AC500B55076 /* TaskManagerApp.swift */; };
-		850A2DFE2B8A0AC500B55076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2DFD2B8A0AC500B55076 /* ContentView.swift */; };
+		850A2DFE2B8A0AC500B55076 /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2DFD2B8A0AC500B55076 /*  .swift */; };
 		850A2E002B8A0AC600B55076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850A2DFF2B8A0AC600B55076 /* Assets.xcassets */; };
 		850A2E032B8A0AC600B55076 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850A2E022B8A0AC600B55076 /* Preview Assets.xcassets */; };
 		850A2E0E2B8A0AC600B55076 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E0D2B8A0AC600B55076 /* TaskManagerTests.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		850A2DF82B8A0AC500B55076 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850A2DFB2B8A0AC500B55076 /* TaskManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerApp.swift; sourceTree = "<group>"; };
-		850A2DFD2B8A0AC500B55076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		850A2DFD2B8A0AC500B55076 /*  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
 		850A2DFF2B8A0AC600B55076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850A2E022B8A0AC600B55076 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		850A2E042B8A0AC600B55076 /* TaskManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskManager.entitlements; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			children = (
 				850A2DFB2B8A0AC500B55076 /* TaskManagerApp.swift */,
 				850A2E262B8A0B7E00B55076 /* Model */,
-				850A2DFD2B8A0AC500B55076 /* ContentView.swift */,
+				850A2DFD2B8A0AC500B55076 /*  .swift */,
 				85B2F4CD2B8A855700E903A5 /* TaskView.swift */,
 				850A2E2F2B8A1FF500B55076 /* SidebarView.swift */,
 				850A2E312B8A201500B55076 /* StaticTaskListView.swift */,
@@ -290,7 +290,7 @@
 			files = (
 				85B2F4CE2B8A855700E903A5 /* TaskView.swift in Sources */,
 				850A2E322B8A201500B55076 /* StaticTaskListView.swift in Sources */,
-				850A2DFE2B8A0AC500B55076 /* ContentView.swift in Sources */,
+				850A2DFE2B8A0AC500B55076 /*  .swift in Sources */,
 				850A2E282B8A0B9800B55076 /* Task.swift in Sources */,
 				850A2E2C2B8A0F4400B55076 /* TaskSection.swift in Sources */,
 				850A2E2A2B8A0DDD00B55076 /* TaskGroup.swift in Sources */,
@@ -477,7 +477,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -507,7 +507,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
