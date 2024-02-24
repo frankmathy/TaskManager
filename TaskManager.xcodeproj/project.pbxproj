@@ -108,11 +108,11 @@
 				850A2DFB2B8A0AC500B55076 /* TaskManagerApp.swift */,
 				850A2E262B8A0B7E00B55076 /* Model */,
 				850A2DFD2B8A0AC500B55076 /* ContentView.swift */,
+				850A2E2F2B8A1FF500B55076 /* SidebarView.swift */,
+				850A2E312B8A201500B55076 /* TaskListView.swift */,
 				850A2DFF2B8A0AC600B55076 /* Assets.xcassets */,
 				850A2E042B8A0AC600B55076 /* TaskManager.entitlements */,
 				850A2E012B8A0AC600B55076 /* Preview Content */,
-				850A2E2F2B8A1FF500B55076 /* SidebarView.swift */,
-				850A2E312B8A201500B55076 /* TaskListView.swift */,
 			);
 			path = TaskManager;
 			sourceTree = "<group>";
