@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct TaskListView: View {
+    let title: String
+    let tasks: [Task]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(tasks) { task in
+            HStack {
+                Image(systemName: task.isCompleted ? "largecircle.fill.circle" : "circle")
+                Text(task.title)
+            }
+        }
     }
 }
 
 #Preview {
-    TaskListView()
+    TaskListView(title: "All", tasks: Task.examples())
 }
