@@ -10,7 +10,7 @@ import SwiftUI
 struct SidebarView: View {
     
     @Binding var userCreatedGroups: [TaskGroup]
-    @Binding var selection : TaskSection
+    @Binding var selection : TaskSection?
 
     var body: some View {
         List(selection: $selection) {

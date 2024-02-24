@@ -18,7 +18,9 @@
 		850A2E2A2B8A0DDD00B55076 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E292B8A0DDD00B55076 /* TaskGroup.swift */; };
 		850A2E2C2B8A0F4400B55076 /* TaskSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E2B2B8A0F4300B55076 /* TaskSection.swift */; };
 		850A2E302B8A1FF500B55076 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E2F2B8A1FF500B55076 /* SidebarView.swift */; };
-		850A2E322B8A201500B55076 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E312B8A201500B55076 /* TaskListView.swift */; };
+		850A2E322B8A201500B55076 /* StaticTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2E312B8A201500B55076 /* StaticTaskListView.swift */; };
+		85B2F4CC2B8A832500E903A5 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2F4CB2B8A832500E903A5 /* TaskListView.swift */; };
+		85B2F4CE2B8A855700E903A5 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2F4CD2B8A855700E903A5 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		850A2E292B8A0DDD00B55076 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
 		850A2E2B2B8A0F4300B55076 /* TaskSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSection.swift; sourceTree = "<group>"; };
 		850A2E2F2B8A1FF500B55076 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
-		850A2E312B8A201500B55076 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		850A2E312B8A201500B55076 /* StaticTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTaskListView.swift; sourceTree = "<group>"; };
+		85B2F4CB2B8A832500E903A5 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		85B2F4CD2B8A855700E903A5 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,10 @@
 				850A2DFB2B8A0AC500B55076 /* TaskManagerApp.swift */,
 				850A2E262B8A0B7E00B55076 /* Model */,
 				850A2DFD2B8A0AC500B55076 /* ContentView.swift */,
+				85B2F4CD2B8A855700E903A5 /* TaskView.swift */,
 				850A2E2F2B8A1FF500B55076 /* SidebarView.swift */,
-				850A2E312B8A201500B55076 /* TaskListView.swift */,
+				850A2E312B8A201500B55076 /* StaticTaskListView.swift */,
+				85B2F4CB2B8A832500E903A5 /* TaskListView.swift */,
 				850A2DFF2B8A0AC600B55076 /* Assets.xcassets */,
 				850A2E042B8A0AC600B55076 /* TaskManager.entitlements */,
 				850A2E012B8A0AC600B55076 /* Preview Content */,
@@ -282,13 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				850A2E322B8A201500B55076 /* TaskListView.swift in Sources */,
+				85B2F4CE2B8A855700E903A5 /* TaskView.swift in Sources */,
+				850A2E322B8A201500B55076 /* StaticTaskListView.swift in Sources */,
 				850A2DFE2B8A0AC500B55076 /* ContentView.swift in Sources */,
 				850A2E282B8A0B9800B55076 /* Task.swift in Sources */,
 				850A2E2C2B8A0F4400B55076 /* TaskSection.swift in Sources */,
 				850A2E2A2B8A0DDD00B55076 /* TaskGroup.swift in Sources */,
 				850A2DFC2B8A0AC500B55076 /* TaskManagerApp.swift in Sources */,
 				850A2E302B8A1FF500B55076 /* SidebarView.swift in Sources */,
+				85B2F4CC2B8A832500E903A5 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +473,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.frankmathy.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -492,8 +503,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.frankmathy.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
