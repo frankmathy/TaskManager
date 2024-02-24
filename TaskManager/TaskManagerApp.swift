@@ -27,5 +27,21 @@ struct TaskManagerApp: App {
                 }
             }
         }
+        
+        WindowGroup("Special window") {
+            Text("Special Window").frame(minWidth: 200, idealWidth: 300, minHeight: 200)
+        }
+        .defaultPosition(.leading)
+        
+        Settings {
+            Text("Setting")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        
+        MenuBarExtra("Menu") {
+            Button("Do something amazing") {
+                
+            }
+        }
     }
 }

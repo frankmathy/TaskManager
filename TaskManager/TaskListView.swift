@@ -10,13 +10,15 @@ import SwiftUI
 struct TaskListView: View {
     let title: String
     @Binding var tasks: [Task]
+    @State private var selectedTask: Task? = nil
     
     @State private var inspectorIsShown: Bool = false
     
     var body: some View {
         List($tasks) { $task in
-            TaskView(task: $task)
+            TaskView(task: $task, selectedTask: $selectedTask, inspectorIsShown: $inspectorIsShown)
         }
+        .navigationTitle(title)
         .toolbar {
             ToolbarItemGroup {
                 Button {
@@ -32,7 +34,14 @@ struct TaskListView: View {
             }
         }
         .inspector(isPresented: $inspectorIsShown) {
-            Text("show some details")
+            Group {
+                if let selectedTask {
+                    Text(selectedTask.title).font(.title)
+                } else {
+                    Text("Nothing selected")
+                }
+            }
+            .frame(minWidth: 100, maxWidth: .infinity)
         }
     }
 }
